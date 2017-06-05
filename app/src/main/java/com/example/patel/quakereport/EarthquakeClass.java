@@ -7,36 +7,33 @@ package com.example.patel.quakereport;
 public class EarthquakeClass {
 
     private double Magnitude;
+    private String Url;
     private String Location;
     private long TimeInMilliseconds;
 
-    public EarthquakeClass(double magnitude, String location, long timeInMilliseconds) {
+    public EarthquakeClass(double magnitude, String location, long timeInMilliseconds, String url) {
         Magnitude = magnitude;
         Location = location;
         TimeInMilliseconds = timeInMilliseconds;
+        Url = url;
     }
 
     public double getMagnitude() {
         return Magnitude;
     }
 
-    public void setMagnitude(double magnitude) {
-        Magnitude = magnitude;
-    }
 
     public String getLocation() {
         return Location;
     }
 
-    public void setLocation(String location) {
-        Location = location;
-    }
 
     public long getTimeInMilliseconds() {
         return TimeInMilliseconds;
     }
 
-    public void setTimeInMilliseconds(long timeInMilliseconds) {
-        TimeInMilliseconds = timeInMilliseconds;
+
+    public String getUrl() {
+        return Url;
     }
 }

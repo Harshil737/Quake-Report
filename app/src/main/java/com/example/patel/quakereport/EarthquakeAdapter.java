@@ -41,7 +41,7 @@ public class EarthquakeAdapter extends ArrayAdapter<EarthquakeClass> {
         TextView locationOffsetView = (TextView) listItemView.findViewById(R.id.location_offset);
         TextView primaryLocationView = (TextView) listItemView.findViewById(R.id.primary_location);
         TextView dateView = (TextView) listItemView.findViewById(R.id.date);
-        TextView timeView = (TextView) listItemView.findViewById(R.id.TimeInMilliseconds);
+        TextView timeView = (TextView) listItemView.findViewById(R.id.time);
 
         EarthquakeClass earthquakeClass = getItem(position);
 

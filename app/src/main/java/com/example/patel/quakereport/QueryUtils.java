@@ -57,8 +57,11 @@ public class QueryUtils {
                 String place = properties.getString("place");
                 long time = properties.getLong("time");
 
-                EarthquakeClass data = new EarthquakeClass(mag, place, time);
-                earthquakes.add(data);
+//                EarthquakeClass data = new EarthquakeClass(mag, place, time);
+
+                String url = properties.getString("url");
+                EarthquakeClass earthquakeProperties = new EarthquakeClass(mag, place, time, url);
+                earthquakes.add(earthquakeProperties);
             }
 
         } catch (JSONException e) {
